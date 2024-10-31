@@ -7,7 +7,7 @@ const server = createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
   res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin'); // Set Referrer-Policy header
-  res.end('Hello World maransighe!');
+  res.end('Hi this a sample node application to demonstrate the network CA!');
 });
 
 server.listen(port, hostname, () => {
