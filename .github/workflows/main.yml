@@ -42,9 +42,9 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
-      - name: Build Docker image and push
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          push: true  # push
-          tags: ca-one-app:latest
+      # - name: Build Docker image and push
+      #   uses: docker/build-push-action@v5
+      #   with:
+      #     context: .
+      #     push: true  # push
+      #     tags: netca.azurecr.io/samples/ca-one-app:latest
