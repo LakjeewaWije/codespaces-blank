@@ -46,11 +46,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           command_timeout: 30m
           script: |
-              sudo docker pull netca.azurecr.io/samples/ca-one-app:latest
-              sudo docker stop ca-one-container
-              sudo docker rm ca-one-container
-              sudo docker run -d -p 3000:3000 --name ca-one-container --restart unless-stopped netca.azurecr.io/samples/ca-one-app:latest
-              echo "ca-one-app container started"
+              sudo docker pull netca.azurecr.io/samples/ca-one-app:latest"
 
       # - name: Connect to Server and Pull
       #   uses: appleboy/ssh-action@v1.0.3
@@ -64,3 +60,8 @@ jobs:
       #         sudo docker rm ca-one-container
       #         sudo docker run -d -p 3000:3000 --name ca-one-container  netca.azurecr.io/samples/ca-one-app:latest
       #         echo "ca-one-app container started"
+
+      # sudo docker stop ca-one-container
+      #         sudo docker rm ca-one-container
+      #         sudo docker run -d -p 3000:3000 --name ca-one-container --restart unless-stopped netca.azurecr.io/samples/ca-one-app:latest
+      #         echo "ca-one-app container started
