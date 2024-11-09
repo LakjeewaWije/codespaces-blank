@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           command_timeout: 30m
           script: |
-              sudo docker pull netca.azurecr.io/samples/ca-one-app:latest"
+              sudo docker pull netca.azurecr.io/samples/ca-one-app:latest
 
       # - name: Connect to Server and Pull
       #   uses: appleboy/ssh-action@v1.0.3
