@@ -24,9 +24,6 @@ sudo docker run hello-world
 # install nginx
 sudo apt-get install -y nginx
 
-# URL of the nginx_content file to download
-#URL_NGINX_TEMP="https://pastorag.blob.core.windows.net/scripts/content-nginx.txt"
-
 # Destination file
 DESTINATION="/etc/nginx/sites-enabled/default"
 
@@ -41,21 +38,6 @@ sudo nginx -t
 
 # Restart NGINX
 sudo systemctl restart nginx
-
-# install node
-# sudo apt-get install -y nodejs
-
-# # install npm
-# sudo apt install -y npm
-
-# URL of the nginx_content file to download
-#URL_NODEJS ="https://pastorag.blob.core.windows.net/scripts/index.js"
-
-# Download the index.js file
-# sudo curl -o /home/index.js https://pastorag.blob.core.windows.net/scripts/index.js
-
-# # run the node js file
-# sudo node /home/index.js
 
 # install az cli
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
