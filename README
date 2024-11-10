@@ -1,4 +1,3 @@
-# GitHub Codespaces ♥️ Express
 # Automated Container deployment and Administration in the cloud - CA 1 
 
 This project is about automating vm infastructure and configurations along with CI/CD integration.
@@ -9,6 +8,10 @@ This project is about automating vm infastructure and configurations along with 
 
 ### Terraform Script Explanation for VM and other resources creation
 All the variables are stored in variables.tf
+
+```
+npm start
+```
 
 ````
 resource "random_pet" "rg_name" {
