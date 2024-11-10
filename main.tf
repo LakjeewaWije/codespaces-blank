@@ -2,6 +2,7 @@ resource "random_pet" "rg_name" {
   prefix = var.resource_group_name_prefix
 }
 
+# Create a resource group
 resource "azurerm_resource_group" "rg" {
   location = var.resource_group_location
   name     = random_pet.rg_name.id
@@ -115,7 +116,7 @@ resource "azurerm_storage_account" "caone_storage_account" {
 
 # Create virtual machine
 resource "azurerm_linux_virtual_machine" "caone_terraform_vm" {
-  name                  = "pavm"
+  name                  = "caonevm"
   location              = azurerm_resource_group.rg.location
   resource_group_name   = azurerm_resource_group.rg.name
   network_interface_ids = [azurerm_network_interface.caone_terraform_nic.id]
