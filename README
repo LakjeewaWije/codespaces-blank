@@ -9,10 +9,6 @@ This project is about automating vm infastructure and configurations along with 
 ### Terraform Script Explanation for VM and other resources creation
 All the variables are stored in variables.tf
 
-```
-npm start
-```
-
 ````
 resource "random_pet" "rg_name" {
      prefix = var.resource_group_name_prefix
