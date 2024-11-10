@@ -46,6 +46,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           command_timeout: 30m
           script: |
+              sudo az acr login --name ${{ secrets.ACR_NAME }} --username ${{ secrets.ACR_USERNAME }} --password ${{ secrets.ACR_PASSWORD }}
               sudo docker pull netca.azurecr.io/samples/ca-one-app:latest
 
       # - name: Connect to Server and Pull
