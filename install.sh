@@ -51,5 +51,5 @@ sudo docker pull netca.azurecr.io/samples/ca-one-app:latest
 
 #  run the sample docker image
 
-sudo docker run -d -p 3000:3000 --name ca-one-container netca.azurecr.io/samples/ca-one-app:latest
+sudo docker run --restart always -d -p 3000:3000 --name ca-one-container netca.azurecr.io/samples/ca-one-app:latest
 
